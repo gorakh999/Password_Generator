@@ -1,5 +1,10 @@
 import string
 import random
+from datetime import date, datetime
+
+
+today = date.today()
+now = datetime.now()
 
 if __name__ == "__main__":
     s1 = string.ascii_lowercase
@@ -18,5 +23,13 @@ if __name__ == "__main__":
     s.extend(list(s4))
     # print(s)
     random.shuffle(s)
+    password = (''.join(s[0:plen]))
     print("Your Password is :")
-    print(''.join(s[0:plen]))
+    print(password)
+
+    d2 = today.strftime("%B %d, %Y")
+    
+
+    f = open("password.txt", "a")
+    f.write(f"New Password generated at {now} is {password}\n")
+    f.close()
