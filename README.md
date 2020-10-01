@@ -1,2 +1,4 @@
 # Password Generator
-This is a Password Generator Program in Python . It will tell you very strong Type Password For Your Various Account. and it will store your password in a file so that u can check that password after it is generated.
+A Password Generator Program using Python. 
+It gives out a strong password for your Various Accounts.
+Stores your password in a file so that u can easily access the password after being generated.
