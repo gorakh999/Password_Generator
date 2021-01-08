@@ -15,7 +15,8 @@ if __name__ == "__main__":
     # print(s3)
     s4 = string.punctuation
     # print(s4)
-    plen = int(input("Enter the length of the password\n"))
+    acc = input("Enter Name of Plateform For which you need Password : ")
+    plen = int(input("Enter the length of the password : "))
     s = []
     s.extend(list(s1))
     s.extend(list(s2))
@@ -31,5 +32,5 @@ if __name__ == "__main__":
     
 
     f = open("password.txt", "a")
-    f.write(f"New Password generated at {now} is {password}\n")
+    f.write(f"Password generated for {acc} at {now} is {password}\n")
     f.close()
